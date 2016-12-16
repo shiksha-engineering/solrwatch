@@ -1,6 +1,5 @@
 from elasticsearch import *
 from request import *
-import pprint
 
 ###
 # Class for elasticsearch operations

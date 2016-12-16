@@ -1,7 +1,6 @@
 from solrwatch import *
 import schedule
 import time
-import pprint
 import os
 from datetime import datetime
 

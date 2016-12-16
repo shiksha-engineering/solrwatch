@@ -1,3 +1,5 @@
+from request import *
+
 ###
 # Class for extracting Admin metrics
 ###

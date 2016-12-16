@@ -1,5 +1,4 @@
 import json
-import pprint
 from datetime import datetime
 import time
 from mbeans_metrics import *
@@ -20,9 +19,6 @@ class SolrWatch:
     def run(self):
         
         metrics = self.get_all_metrics()
-        
-        #pp = pprint.PrettyPrinter(indent=4)
-        #pp.pprint(metrics)
         
         # Insert into elasticsearch
         self.swes.insert(metrics)
