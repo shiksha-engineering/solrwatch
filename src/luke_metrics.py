@@ -1,6 +1,3 @@
-from request import *
-import pprint
-
 ###
 # Class for extracting Luke metrics
 ###

@@ -3,7 +3,7 @@ from request import *
 import pprint
 
 ###
-# Class for extracting Luke metrics
+# Class for elasticsearch operations
 ###
 
 class SWES:
