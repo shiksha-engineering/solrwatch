@@ -90,8 +90,8 @@ class MBeansMetrics:
                 # Avg. response time for 1 minute window
                 if es_keys['total_time'] in doc:
                     processing_time = total_time - doc[es_keys['total_time']]
-                    if processing_time > 0:
-                        response_time = throughput/(total_time - doc[es_keys['total_time']])
+                    if throughput > 0:
+                        response_time = (total_time - doc[es_keys['total_time']])/throughput
                 
         return {
             es_keys['requests'] : requests,
